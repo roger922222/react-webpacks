@@ -1,0 +1,24 @@
+{
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ],
+      "react"
+    ],
+    "plugins": [
+        "transform-object-rest-spread",
+        "transform-class-properties",
+        "transform-async-to-generator",
+        "transform-decorators-legacy",
+        "transform-omodule-variable",
+        "syntax-dynamic-import"
+    ],
+    "env": {
+        "development": {
+          "presets": ["react-hmre"]
+        }  
+    }
+}

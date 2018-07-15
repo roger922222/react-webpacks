@@ -1,0 +1,55 @@
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.loading-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  .loading-loop {
+    animation: rotating 1s infinite linear;
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    width: 28px;
+  }
+
+  .loading-logo {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    width: 28px;
+  }
+}
+
+.loading-content-children {
+  font-size: 15px;
+  color: #fff;
+}

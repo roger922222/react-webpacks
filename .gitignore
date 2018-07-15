@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+build/
+/dist/
+node_modules/
+*.log
+/index.html
+zyb.tar.gz
+.project
+.svn
+package-lock.json
+.vscode/
